@@ -1,0 +1,157 @@
+
+/* INÍCIO - margem da tela */
+body {
+  min-height: 98%;
+  text-align: center; /* alinha o conteúdo ao centro */
+}
+
+/* Título - Página Inicial */
+#header {
+  font-family: 'Optima'; /* tipo de fonte */
+  font-size: 15px; /* alterando o tamanho da fonte */
+  width: 100%; /* largura do menu */
+  height: 180px; /* altura do menu */
+}
+
+h2 {
+  font-family: 'Optima'; /* tipo de fonte */
+  font-size: 35px; /* alterando o tamanho da fonte */
+  text-align: left;
+}
+
+a {
+  color: black; /* cor */
+  text-decoration: none; /* retira o sublinhado dos links */
+}
+
+/* Linha */
+hr {
+  border-bottom: 3px solid #FFD28E; /* cor e tamanho da linha */
+}
+
+/* Linha vertical do menu */
+.linha-vertical {
+  height: 500px; /* altura da linha */
+  border-right: 3px solid #FFD28E; /* cor e tamanho da linha */
+}
+
+/* PÁGINA 2 - OS MAIS VENDIDOS */
+
+.nav {
+  display: flex; /* criar um layout flexível */
+  justify-content: space-between; /* alinha o conteúdo à esquerda e à direita, preenchendo o espaço entre eles */
+  align-items: baseline; /* para alinhar a linha de base dos elementos, garantindo que fiquem na mesma linha */
+  background-color: #F6F4EC;
+}
+
+.nav h2 {
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: underline; /* sublinhar o link */
+  font-size: 20px; /* alterando o tamanho da fonte */
+}
+
+p {
+  font-family: 'Optima'; /* fonte */
+  font-size: 20px; /* alterando o tamanho da fonte */
+  margin-top: 10px; /* espaço acima do elemento */
+  max-width: 180px;
+}
+
+.product-container { /* uma classe para agrupar outros elementos e desta forma, conseguir transmitir as características de formatação */
+  background-color: #F6F4EC;
+  display: flex; /* container onde foram encaixadas as imagens e a descrição */
+  align-items: center; /* alinhar os elementos no eixo transversal */
+  gap: 50px; /* define os espaços entre as linhas e colunas */
+  justify-content: center; /* alinha os elementos horizontalmente no centro */
+}
+
+.product-image { /* estilos específicos para as imagens dos produtos */
+  width: 595px; /* largura das imagens */
+  height: 680px; /* altura das imagens */
+}
+
+.product-description { /* estilos específicos para a descrição dos produtos */
+  font-family: 'Optima'; /* fonte */
+  font-size: 20px; /* alterando o tamanho da fonte */
+  margin-top: 10px; /* espaço acima do elemento */
+  text-align: center; /* alinha o texto ao centro */
+}
+
+/* PÁGINA 3 - OS MAIS VENDIDOS */
+
+#main {
+  position: relative;
+}
+
+#main table {
+  font-family: 'Optima';
+  font-size: 24px;
+}
+
+.orange-box {
+  position: absolute;
+  top: 150px; 
+  left: 600px; /* posiciona na esquerda */
+  width: 1050px; /* posiciona na direita */
+  background-color: #FFD28E;
+  padding: 100px; /*definir o espaçamento ao redor de um elemento.*/
+  color: black; 
+  text-align: center;
+}
+
+.orange-box h1 {
+  margin: 0;
+}
+
+.orange-box h4 {
+  margin: 10px;
+}
+
+/* PÁGINA 4 - OS FALE CONOSCO */
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F6F4EC;
+  text-align: center; /* alinha o conteúdo ao centro */
+}
+
+.texto {
+  flex: 1;
+  margin: 0 auto; /* centraliza o elemento na tela */
+}
+
+.texto h1 {
+  margin: 7px;
+}
+
+.texto h3 {
+  margin: 7px;
+  font-weight:100;
+}
+
+.imagem img {
+  max-width: 100%;
+  height: auto;
+}
+
+.rodape {
+  text-align: center;
+}
+
+.imagem {
+  flex: 1;
+  text-align: right;
+}
+
+.imagem img {
+  max-width: 100%;
+  width: 1000px;
+  height: 980px;
+  flex-shrink: 0;
+  margin: 0 auto; /* centraliza o elemento na tela */
+}
